@@ -1,0 +1,26 @@
+class ApproveDelegateView(APIView):
+    """
+    Vue pour approuver un délégué.
+    Accessible uniquement aux administrateurs.
+    """
+    permission_classes = [IsAdministrator]  # Une seule fois suffit
+
+    def post(self, request, user_id):
+        try:
+            user = CustomUser.objects.get(id=user_id, role='delegue', is_approved=False)
+            user.is_approved = True
+            user.save()
+
+            # Envoi d'un email de notification
+            send_delegue_approval_notification(user)
+
+            return Response({
+                'message': 'Délégué approuvé avec succès.', 
+                'user': UserSerializer(user).data
+            }, status=status.HTTP_200_OK)
+        except CustomUser.DoesNotExist:
+            return Response({
+                'error': 'Utilisateur non trouvé ou déjà approuvé.'
+            }, status=status.HTTP_404_NOT_FOUND)
+
+
