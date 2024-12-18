@@ -115,3 +115,204 @@ INFO 2024-11-25 16:10:46,754 basehttp "POST /authapp/login/ HTTP/1.1" 200 612
 WARNING 2024-11-25 16:11:12,326 log Not Found: /authapp/login/
 WARNING 2024-11-25 16:11:12,326 basehttp "POST /authapp/login/ HTTP/1.1" 404 35
 INFO 2024-11-25 16:11:19,500 basehttp "POST /authapp/login/ HTTP/1.1" 200 612
+ERROR 2024-12-18 12:19:35,747 exception Invalid HTTP_HOST header: '192.168.1.165'. You may need to add '192.168.1.165' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.165'. You may need to add '192.168.1.165' to ALLOWED_HOSTS.
+WARNING 2024-12-18 12:19:36,025 log Bad Request: /admin
+ERROR 2024-12-18 12:19:59,959 exception Invalid HTTP_HOST header: '192.168.1.165'. You may need to add '192.168.1.165' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.165'. You may need to add '192.168.1.165' to ALLOWED_HOSTS.
+WARNING 2024-12-18 12:20:00,006 log Bad Request: /
+ERROR 2024-12-18 12:26:51,590 exception Invalid HTTP_HOST header: '192.168.1.165'. You may need to add '192.168.1.165' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/heil/U-Reserve/.venv/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.1.165'. You may need to add '192.168.1.165' to ALLOWED_HOSTS.
+WARNING 2024-12-18 12:26:51,837 log Bad Request: /
+WARNING 2024-12-18 12:33:46,789 log Not Found: /
+WARNING 2024-12-18 12:35:18,218 log Bad Request: /authapp/signup/
+WARNING 2024-12-18 12:35:46,964 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:35:46,975 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:35:46,988 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:35:46,991 log Not Found: /static/admin/css/login.css
+WARNING 2024-12-18 12:35:46,996 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:35:46,998 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:35:47,002 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:08,515 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:08,518 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:08,523 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:08,534 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:08,537 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:08,540 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:08,542 log Not Found: /static/admin/css/dashboard.css
+WARNING 2024-12-18 12:36:31,894 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:31,897 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:31,904 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:31,908 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:31,909 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:31,912 log Not Found: /static/admin/css/dashboard.css
+WARNING 2024-12-18 12:36:31,915 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:37,162 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:37,164 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:37,167 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:37,173 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:37,174 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:37,179 log Not Found: /static/admin/css/dashboard.css
+WARNING 2024-12-18 12:36:37,180 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:39,125 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:39,126 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:39,136 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:39,137 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:39,138 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:39,143 log Not Found: /static/admin/css/dashboard.css
+WARNING 2024-12-18 12:36:39,144 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:43,243 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:43,246 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:43,255 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:43,258 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:43,260 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:43,264 log Not Found: /static/admin/css/dashboard.css
+WARNING 2024-12-18 12:36:43,267 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:45,188 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:45,189 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:45,194 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:45,196 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:45,198 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:45,203 log Not Found: /static/admin/css/forms.css
+WARNING 2024-12-18 12:36:45,208 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-12-18 12:36:45,219 log Not Found: /static/admin/js/core.js
+WARNING 2024-12-18 12:36:45,224 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2024-12-18 12:36:45,226 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2024-12-18 12:36:45,231 log Not Found: /static/admin/js/SelectBox.js
+WARNING 2024-12-18 12:36:45,235 log Not Found: /static/admin/js/actions.js
+WARNING 2024-12-18 12:36:45,250 log Not Found: /static/admin/js/SelectFilter2.js
+WARNING 2024-12-18 12:36:45,253 log Not Found: /static/admin/js/urlify.js
+WARNING 2024-12-18 12:36:45,256 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-12-18 12:36:45,258 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-12-18 12:36:45,260 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:45,264 log Not Found: /static/admin/js/change_form.js
+WARNING 2024-12-18 12:36:45,266 log Not Found: /static/admin/js/prepopulate_init.js
+WARNING 2024-12-18 12:36:45,268 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-12-18 12:36:45,277 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2024-12-18 12:36:45,286 log Not Found: /static/admin/js/core.js
+WARNING 2024-12-18 12:36:45,295 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2024-12-18 12:36:45,304 log Not Found: /static/admin/js/SelectBox.js
+WARNING 2024-12-18 12:36:45,318 log Not Found: /static/admin/js/actions.js
+WARNING 2024-12-18 12:36:45,327 log Not Found: /static/admin/js/SelectFilter2.js
+WARNING 2024-12-18 12:36:45,336 log Not Found: /static/admin/js/urlify.js
+WARNING 2024-12-18 12:36:45,344 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-12-18 12:36:45,352 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-12-18 12:36:45,364 log Not Found: /static/admin/js/prepopulate_init.js
+WARNING 2024-12-18 12:36:45,365 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:45,365 log Not Found: /static/admin/js/change_form.js
+WARNING 2024-12-18 12:36:48,342 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:48,343 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:48,352 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:48,353 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:48,354 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:48,358 log Not Found: /static/admin/css/dashboard.css
+WARNING 2024-12-18 12:36:48,361 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:50,671 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:50,673 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:50,682 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:50,683 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:50,685 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:50,691 log Not Found: /static/admin/css/forms.css
+WARNING 2024-12-18 12:36:50,694 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-12-18 12:36:50,703 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2024-12-18 12:36:50,701 log Not Found: /static/admin/js/calendar.js
+WARNING 2024-12-18 12:36:50,706 log Not Found: /static/admin/js/admin/DateTimeShortcuts.js
+WARNING 2024-12-18 12:36:50,710 log Not Found: /static/admin/js/core.js
+WARNING 2024-12-18 12:36:50,720 log Not Found: /static/admin/js/actions.js
+WARNING 2024-12-18 12:36:50,721 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2024-12-18 12:36:50,726 log Not Found: /static/admin/js/urlify.js
+WARNING 2024-12-18 12:36:50,727 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-12-18 12:36:50,730 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-12-18 12:36:50,737 log Not Found: /static/admin/js/change_form.js
+WARNING 2024-12-18 12:36:50,739 log Not Found: /static/admin/js/prepopulate_init.js
+WARNING 2024-12-18 12:36:50,741 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:50,743 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-12-18 12:36:50,750 log Not Found: /static/admin/img/icon-addlink.svg
+WARNING 2024-12-18 12:36:50,752 log Not Found: /static/admin/js/calendar.js
+WARNING 2024-12-18 12:36:50,761 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2024-12-18 12:36:50,769 log Not Found: /static/admin/js/admin/DateTimeShortcuts.js
+WARNING 2024-12-18 12:36:50,778 log Not Found: /static/admin/js/core.js
+WARNING 2024-12-18 12:36:50,787 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2024-12-18 12:36:50,800 log Not Found: /static/admin/js/actions.js
+WARNING 2024-12-18 12:36:50,807 log Not Found: /static/admin/js/urlify.js
+WARNING 2024-12-18 12:36:50,816 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-12-18 12:36:50,825 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-12-18 12:36:50,835 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:50,838 log Not Found: /static/admin/js/change_form.js
+WARNING 2024-12-18 12:36:50,840 log Not Found: /static/admin/js/prepopulate_init.js
+WARNING 2024-12-18 12:36:50,846 log Not Found: /static/admin/img/icon-addlink.svg
+WARNING 2024-12-18 12:36:56,528 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:56,534 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:56,533 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:56,538 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:56,540 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:56,544 log Not Found: /static/admin/css/dashboard.css
+WARNING 2024-12-18 12:36:56,550 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:59,624 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:36:59,628 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:36:59,634 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:36:59,638 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:36:59,636 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:36:59,643 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:36:59,645 log Not Found: /static/admin/css/dashboard.css
+INFO 2024-12-18 12:39:08,557 email_utils Email d'approbation envoyé avec succès à maffo.ngleu@gmail.com
+WARNING 2024-12-18 12:39:35,252 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:39:35,254 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:39:35,266 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:39:35,264 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:39:35,270 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-12-18 12:39:35,275 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:39:35,278 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2024-12-18 12:39:35,279 log Not Found: /static/admin/css/changelists.css
+WARNING 2024-12-18 12:39:35,290 log Not Found: /static/admin/js/actions.js
+WARNING 2024-12-18 12:39:35,292 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2024-12-18 12:39:35,294 log Not Found: /static/admin/js/core.js
+WARNING 2024-12-18 12:39:35,300 log Not Found: /static/admin/js/urlify.js
+WARNING 2024-12-18 12:39:35,302 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-12-18 12:39:35,305 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-12-18 12:39:35,307 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:39:35,309 log Not Found: /static/admin/js/filters.js
+WARNING 2024-12-18 12:39:35,330 log Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+WARNING 2024-12-18 12:39:35,341 log Not Found: /static/admin/js/jquery.init.js
+WARNING 2024-12-18 12:39:35,349 log Not Found: /static/admin/js/core.js
+WARNING 2024-12-18 12:39:35,359 log Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+WARNING 2024-12-18 12:39:35,367 log Not Found: /static/admin/js/actions.js
+WARNING 2024-12-18 12:39:35,377 log Not Found: /static/admin/js/urlify.js
+WARNING 2024-12-18 12:39:35,386 log Not Found: /static/admin/js/prepopulate.js
+WARNING 2024-12-18 12:39:35,396 log Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+WARNING 2024-12-18 12:39:35,419 log Not Found: /static/admin/js/filters.js
+WARNING 2024-12-18 12:39:35,423 log Not Found: /static/admin/css/responsive.css
+WARNING 2024-12-18 12:39:45,111 log Not Found: /static/admin/css/base.css
+WARNING 2024-12-18 12:39:45,138 log Not Found: /static/admin/css/dark_mode.css
+WARNING 2024-12-18 12:39:45,144 log Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2024-12-18 12:39:45,156 log Not Found: /static/admin/js/theme.js
+WARNING 2024-12-18 12:39:45,173 log Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2024-12-18 12:39:45,178 log Not Found: /static/admin/css/dashboard.css
+WARNING 2024-12-18 12:39:45,181 log Not Found: /static/admin/css/responsive.css
