@@ -2401,3 +2401,27 @@ INFO 2024-12-20 15:06:43,267 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2024-12-20 15:07:07,230 basehttp "POST /admin/authapp/customuser/1/change/ HTTP/1.1" 302 0
 INFO 2024-12-20 15:07:07,296 basehttp "GET /admin/authapp/customuser/ HTTP/1.1" 200 13555
 INFO 2024-12-20 15:07:07,365 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-21 12:23:35,128 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-21 12:24:00,548 log Not Found: /
+WARNING 2024-12-21 12:24:00,553 basehttp "GET / HTTP/1.1" 404 2825
+WARNING 2024-12-21 12:24:04,176 log Not Found: /favicon.ico
+WARNING 2024-12-21 12:24:04,177 basehttp "GET /favicon.ico HTTP/1.1" 404 2876
+INFO 2024-12-21 12:24:14,825 basehttp "GET /admin/ HTTP/1.1" 200 15842
+INFO 2024-12-21 12:24:24,992 basehttp "GET /admin/reservationapp/hall/ HTTP/1.1" 200 16178
+INFO 2024-12-21 12:24:25,134 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-21 12:24:40,263 basehttp "GET /admin/reservationapp/hall/10/change/ HTTP/1.1" 200 14338
+INFO 2024-12-21 12:24:40,363 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-21 12:24:47,069 basehttp "POST /admin/reservationapp/hall/10/change/ HTTP/1.1" 302 0
+INFO 2024-12-21 12:24:47,167 basehttp "GET /admin/reservationapp/hall/ HTTP/1.1" 200 16379
+INFO 2024-12-21 12:24:47,230 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-21 12:24:49,778 basehttp "GET /admin/reservationapp/hall/11/change/ HTTP/1.1" 200 14313
+INFO 2024-12-21 12:24:49,799 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-21 12:24:54,349 basehttp "POST /admin/reservationapp/hall/11/change/ HTTP/1.1" 302 0
+INFO 2024-12-21 12:24:54,453 basehttp "GET /admin/reservationapp/hall/ HTTP/1.1" 200 16377
+INFO 2024-12-21 12:24:54,520 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-21 12:24:56,834 basehttp "GET /admin/reservationapp/hall/12/change/ HTTP/1.1" 200 14313
+INFO 2024-12-21 12:24:56,866 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-21 12:25:01,183 basehttp "POST /admin/reservationapp/hall/12/change/ HTTP/1.1" 302 0
+INFO 2024-12-21 12:25:01,287 basehttp "GET /admin/reservationapp/hall/ HTTP/1.1" 200 16375
+INFO 2024-12-21 12:25:01,422 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-21 12:25:21,254 basehttp "GET /admin/reservationapp/hall/12/change/ HTTP/1.1" 200 14309
