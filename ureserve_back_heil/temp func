@@ -1,0 +1,112 @@
+from datetime import datetime, timedelta
+from django.core.mail import send_mail
+from django.conf import settings
+from .models import Reservation, Hall
+from django.core.signing import TimestampSigner, BadSignature
+from django.urls import reverse
+from django.utils.http import urlencode
+from authapp.models import CustomUser  # Import your custom user model
+
+def permission_make_reservation(user):
+    """
+    Check if the user has the 'delegate' role.
+    """
+    return user.role == 'delegate'
+
+
+def research_date(date, start_time, end_time):
+    """
+    Find halls that are free for the specified date and time range.
+    """
+    try:
+        # Parse inputs into datetime objects
+        date_obj = datetime.strptime(date, "%Y-%m-%d").date()
+        start_time_obj = datetime.strptime(start_time, "%H:%M").time()
+        end_time_obj = datetime.strptime(end_time, "%H:%M").time()
+
+        # Fetch all reservations for the given date
+        reservations = Reservation.objects.filter(date=date_obj)
+
+        # Find halls that are already reserved in the given time range
+        reserved_halls = reservations.filter(
+            start_time__lt=end_time_obj,
+            end_time__gt=start_time_obj,
+        ).values_list('hall_id', flat=True)
+
+        # Get all halls and exclude the reserved ones
+        available_halls = Hall.objects.exclude(id__in=reserved_halls)
+
+        # Prepare the result
+        result = []
+        for hall in available_halls:
+            result.append({
+                "hall_name": hall.name,
+                "capacity": hall.capacity,
+                "equipments": hall.equipments,
+            })
+
+        return result
+
+    except Exception as e:
+        raise ValueError(f"Error finding available halls: {str(e)}")
+
+
+def make_reservation(code_UE, heuredeb, heurefin, salle, emailProf, matricule_delegate):
+    """
+    Create a reservation and send an email to the professor for validation.
+    """
+    try:
+        # Convert times to datetime.time objects
+        start_time_obj = datetime.strptime(heuredeb, "%H:%M").time()
+        end_time_obj = datetime.strptime(heurefin, "%H:%M").time()
+
+        # Fetch hall and delegate from the database
+        hall = Hall.objects.get(name=salle)
+        delegate = CustomUser.objects.get(matricule=matricule_delegate)
+
+        # Create reservation with pending validation
+        reservation = Reservation.objects.create(
+            hall=hall,
+            course_name=code_UE,
+            professor_email=emailProf,
+            delegate=delegate,
+            start_time=start_time_obj,
+            end_time=end_time_obj,
+            date=datetime.now().date(),  # Example date; replace with actual date as needed
+            is_validated=False
+        )
+
+         # Generate a unique validation link
+        signer = TimestampSigner()
+        token = signer.sign(reservation.id)  # Sign the reservation ID
+        validation_url = (
+            f"{settings.FRONTEND_BASE_URL}/validate-reservation?"
+            f"{urlencode({'token': token})}"
+        )
+
+        # Send an email to the professor with the validation link
+        send_mail(
+            subject="Reservation Validation Request",
+            message=(
+                f"Dear Professor,\n\n"
+                f"The following reservation has been made by {delegate.get_full_name()}:\n\n"
+                f"Course: {code_UE}\n"
+                f"Hall: {salle}\n"
+                f"Date: {reservation.date}\n"
+                f"Time: {heuredeb} to {heurefin}\n\n"
+                f"Please validate the reservation by clicking on the following link:\n"
+                f"{validation_url}\n\n"
+                f"Thank you!"
+            ),
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[emailProf],
+        )
+
+        return reservation.id
+
+    except Hall.DoesNotExist:
+        raise ValueError("The specified hall does not exist.")
+    except CustomUser.DoesNotExist:
+        raise ValueError("The specified delegate does not exist.")
+    except Exception as e:
+        raise ValueError(f"Error creating reservation: {str(e)}")
