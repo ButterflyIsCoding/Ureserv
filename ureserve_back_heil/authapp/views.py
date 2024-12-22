@@ -12,7 +12,11 @@ from django.contrib.auth.hashers import check_password
 from rest_framework.permissions import BasePermission
 from .permissions import IsAdministrator
 from .email_utils import send_delegue_approval_notification, send_etudiant_approval_notification
+<<<<<<< HEAD
 
+=======
+# Create your views here.
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
 
 
 class RegisterView(APIView):
@@ -44,6 +48,7 @@ class RegisterView(APIView):
 
 
 
+<<<<<<< HEAD
 class PendingDelegatesView(APIView):
     """
     Vue pour lister tous les délégués en attente d'approbation.
@@ -62,6 +67,8 @@ class PendingDelegatesView(APIView):
 
 
 
+=======
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
 class ApproveDelegateView(APIView):
     """
     Vue pour approuver un délégué.
@@ -69,6 +76,7 @@ class ApproveDelegateView(APIView):
     """
     permission_classes = [IsAdministrator]
 
+<<<<<<< HEAD
     def post(self, request):
         # Récupérer l'ID de l'utilisateur depuis le corps de la requête
         user_id = request.data.get('user_id')
@@ -77,10 +85,15 @@ class ApproveDelegateView(APIView):
 
         try:
             # Rechercher l'utilisateur correspondant
+=======
+    def post(self, request, user_id):
+        try:
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
             user = CustomUser.objects.get(id=user_id, role='delegue', is_approved=False)
             user.is_approved = True
             user.save()
 
+<<<<<<< HEAD
             # Envoi de l'email (ne bloque pas en cas d'échec)
             email_sent = send_delegue_approval_notification(user)
 
@@ -89,18 +102,36 @@ class ApproveDelegateView(APIView):
                 'message': 'Délégué approuvé avec succès.',
                 'user': UserSerializer(user).data
             }
+=======
+            # Tentative d'envoi de l'email (ne bloque pas si échec)
+            email_sent = send_delegue_approval_notification(user)
+
+            response_data = {
+                'message': 'Délégué approuvé avec succès.', 
+                'user': UserSerializer(user).data
+            }
+            
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
             if not email_sent:
                 response_data['warning'] = "L'email de notification n'a pas pu être envoyé."
 
             return Response(response_data, status=status.HTTP_200_OK)
+<<<<<<< HEAD
         
+=======
+            
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
         except CustomUser.DoesNotExist:
             return Response({
                 'error': 'Utilisateur non trouvé ou déjà approuvé.'
             }, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
             return Response({
+<<<<<<< HEAD
                 'error': f'Une erreur est survenue lors de l\'approbation : {str(e)}'
+=======
+                'error': f'Une erreur est survenue lors de l\'approbation: {str(e)}'
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 

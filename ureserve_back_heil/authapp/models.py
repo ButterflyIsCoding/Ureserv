@@ -30,7 +30,10 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     nom = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
     role = models.CharField(max_length=20, choices=ROLE_CHOICES)
+<<<<<<< HEAD
     niveau = models.CharField(max_length=5)
+=======
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
     matricule = models.CharField(max_length=8)
     password = models.CharField(max_length=128)
     is_approved = models.BooleanField(default=False)

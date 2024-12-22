@@ -5,7 +5,11 @@ from django.contrib.auth.hashers import make_password
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
+<<<<<<< HEAD
         fields = ['id', 'nom', 'email', 'role', 'niveau', 'matricule', 'password', 'is_approved']
+=======
+        fields = ['id', 'nom', 'email', 'role', 'matricule', 'password', 'is_approved']
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
         extra_kwargs = {
             'password': {'write_only': True},  # Ne pas exposer le mot de passe
             'is_approved': {'read_only': True},  # Empêcher les utilisateurs de définir ce champ

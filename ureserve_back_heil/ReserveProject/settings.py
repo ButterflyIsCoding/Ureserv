@@ -23,9 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-a@v5f4$$q^rm@6*uakd^fsv5yeutinzqzhdax0h8t05692%^$g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+<<<<<<< HEAD
 DEBUG = True
 
 ALLOWED_HOSTS = []
+=======
+DEBUG = False
+
+ALLOWED_HOSTS = ['192.168.1.165', 'localhost', '127.0.0.1']
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
 
 
 # Application definition
@@ -39,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'authapp',
+<<<<<<< HEAD
     'rest_framework_simplejwt',
     'reservationapp',
     'channels',
@@ -63,6 +70,11 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 
 
+=======
+    'rest_framework_simplejwt',###############
+]
+
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -176,8 +188,11 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'nana.heil@facsciences-uy1.cm'  # Remplacez par votre adresse Gmail
 EMAIL_HOST_PASSWORD = 'bhmr phou guvx qjqm'  # Mot de passe d'application Google
 DEFAULT_FROM_EMAIL = 'nana.heil@facsciences-uy1.cm'  # L'adresse qui apparaîtra comme expéditeur
+<<<<<<< HEAD
 FRONTEND_URL = 'http://127.0.0.1:8000'
 
+=======
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
 
 # Mise à jour de la configuration LOGGING dans settings.py
 
@@ -223,5 +238,9 @@ LOGGING = {
 AUTH_USER_MODEL = 'authapp.CustomUser'
 
 
+<<<<<<< HEAD
 
 #zrgk gtyw ieji udke 
+=======
+#zrgk gtyw ieji udke 
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05

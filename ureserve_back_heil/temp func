@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from datetime import datetime, timedelta
 from django.core.mail import send_mail
 from django.conf import settings
@@ -110,3 +111,31 @@ def make_reservation(code_UE, heuredeb, heurefin, salle, emailProf, matricule_de
         raise ValueError("The specified delegate does not exist.")
     except Exception as e:
         raise ValueError(f"Error creating reservation: {str(e)}")
+=======
+class ApproveDelegateView(APIView):
+    """
+    Vue pour approuver un délégué.
+    Accessible uniquement aux administrateurs.
+    """
+    permission_classes = [IsAdministrator]  # Une seule fois suffit
+
+    def post(self, request, user_id):
+        try:
+            user = CustomUser.objects.get(id=user_id, role='delegue', is_approved=False)
+            user.is_approved = True
+            user.save()
+
+            # Envoi d'un email de notification
+            send_delegue_approval_notification(user)
+
+            return Response({
+                'message': 'Délégué approuvé avec succès.', 
+                'user': UserSerializer(user).data
+            }, status=status.HTTP_200_OK)
+        except CustomUser.DoesNotExist:
+            return Response({
+                'error': 'Utilisateur non trouvé ou déjà approuvé.'
+            }, status=status.HTTP_404_NOT_FOUND)
+
+
+>>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
