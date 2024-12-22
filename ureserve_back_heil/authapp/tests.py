@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
@@ -103,8 +102,3 @@ class UserAPITests(APITestCase):
         self.delegate_user.refresh_from_db()
         self.assertTrue(self.delegate_user.is_approved)
 
-=======
-from django.test import TestCase
-
-# Create your tests here.
->>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
