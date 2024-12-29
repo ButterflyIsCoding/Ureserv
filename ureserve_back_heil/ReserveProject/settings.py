@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a@v5f4$$q^rm@6*uakd^fsv5yeutinzqzhdax0h8t05692%^$g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.165', 'localhost', '127.0.0.1', '37.60.244.227']
+ALLOWED_HOSTS = ['192.168.1.165', 'localhost', '127.0.0.1', '37.60.244.227', 'ureserve.smartcloudservices.cloud']
 
 
 # Application definition
