@@ -2975,3 +2975,39 @@ INFO 2024-12-30 08:56:18,739 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 WARNING 2024-12-30 08:56:18,794 log Not Found: /favicon.ico
 INFO 2024-12-30 08:56:20,689 basehttp "GET /admin/reservationapp/hall/ HTTP/1.1" 200 13902
 >>>>>>> afe62c5 (New commit with new superuser)
+INFO 2024-12-30 15:58:47,883 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-30 15:59:01,622 log Not Found: /
+WARNING 2024-12-30 15:59:01,623 basehttp "GET / HTTP/1.1" 404 2555
+WARNING 2024-12-30 15:59:01,701 log Not Found: /favicon.ico
+INFO 2024-12-30 15:59:06,831 basehttp "GET /admin/ HTTP/1.1" 200 13139
+INFO 2024-12-30 15:59:07,076 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-12-30 15:59:07,088 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-30 15:59:07,106 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-12-30 15:59:07,112 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+INFO 2024-12-30 15:59:07,118 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2024-12-30 15:59:07,123 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+INFO 2024-12-30 15:59:07,125 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2024-12-30 15:59:07,177 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-12-30 15:59:07,177 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-12-30 15:59:07,178 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-12-30 15:59:14,312 basehttp "GET /admin/reservationapp/hall/ HTTP/1.1" 200 13902
+INFO 2024-12-30 15:59:14,398 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-12-30 15:59:14,399 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-12-30 15:59:14,408 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2024-12-30 15:59:14,417 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2024-12-30 15:59:14,555 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-12-30 15:59:14,558 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-12-30 15:59:14,558 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-12-30 15:59:14,559 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-12-30 15:59:14,587 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-12-30 15:59:14,599 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-12-30 15:59:14,601 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-12-30 15:59:14,718 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+WARNING 2024-12-30 15:59:14,730 log Not Found: /favicon.ico
+INFO 2024-12-30 15:59:17,029 basehttp "POST /admin/logout/ HTTP/1.1" 200 3576
+INFO 2024-12-30 15:59:19,070 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-30 15:59:19,412 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
+INFO 2024-12-30 15:59:19,617 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-12-30 15:59:33,288 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-30 15:59:33,319 basehttp "GET /admin/ HTTP/1.1" 200 13139
+WARNING 2024-12-30 15:59:33,441 log Not Found: /favicon.ico
