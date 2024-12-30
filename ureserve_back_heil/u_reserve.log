@@ -3017,3 +3017,9 @@ INFO 2024-12-30 16:14:00,843 basehttp "GET /admin/ HTTP/1.1" 302 0
 INFO 2024-12-30 16:14:00,868 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
 INFO 2024-12-30 16:14:12,811 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
 INFO 2024-12-30 16:14:12,849 basehttp "GET /admin/ HTTP/1.1" 200 13139
+INFO 2024-12-30 16:16:15,823 basehttp "POST /admin/logout/ HTTP/1.1" 200 3576
+WARNING 2024-12-30 16:16:15,925 log Not Found: /favicon.ico
+INFO 2024-12-30 16:16:19,831 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-30 16:16:19,842 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
+INFO 2024-12-30 16:16:32,716 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-30 16:16:32,738 basehttp "GET /admin/ HTTP/1.1" 200 13139
