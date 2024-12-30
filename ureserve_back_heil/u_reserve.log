@@ -3011,3 +3011,9 @@ INFO 2024-12-30 15:59:19,617 basehttp "GET /static/admin/css/login.css HTTP/1.1"
 INFO 2024-12-30 15:59:33,288 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
 INFO 2024-12-30 15:59:33,319 basehttp "GET /admin/ HTTP/1.1" 200 13139
 WARNING 2024-12-30 15:59:33,441 log Not Found: /favicon.ico
+INFO 2024-12-30 16:13:52,080 autoreload Watching for file changes with StatReloader
+INFO 2024-12-30 16:13:59,227 basehttp "POST /admin/logout/ HTTP/1.1" 200 3576
+INFO 2024-12-30 16:14:00,843 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-30 16:14:00,868 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
+INFO 2024-12-30 16:14:12,811 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-30 16:14:12,849 basehttp "GET /admin/ HTTP/1.1" 200 13139
