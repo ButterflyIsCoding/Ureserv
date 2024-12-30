@@ -3,20 +3,12 @@ POST http://127.0.0.1:8000/authapp/signup/
 Content-Type: application/json
 
 {
-<<<<<<< HEAD
     "nom": "tes1",
     "email": "tes@test1.com",
     "role": "etudiant",
     "matricule": "21T2726",
     "password": "test",
     "niveau": "1"
-=======
-    "nom": "test user",
-    "email": "nana.heil@facsciences-uy1.cm",
-    "role": "etudiant",
-    "matricule": "21T2780",
-    "password": "htchambs124"
->>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
 }
 
 
@@ -25,20 +17,12 @@ POST http://127.0.0.1:8000/authapp/signup/
 Content-Type: application/json
 
 {
-<<<<<<< HEAD
     "nom": "Ma Laetita",
     "email": "mf.ngaleu@gmail.com",
     "role": "delegue",
     "matricule": "21T2413",
     "password": "654759921",
     "niveau": "1"
-=======
-    "nom": "Maffo Laetita",
-    "email": "maffo.ngaleu@gmail.com",
-    "role": "delegue",
-    "matricule": "21T2413",
-    "password": "654759921"
->>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
 }
 
 
@@ -53,12 +37,6 @@ Content-Type: application/json
     "matricule": "0000000",
     "password": "admin"
 }
-<<<<<<< HEAD
-
-=======
-1
->>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
-
 
 ###Login et recuperation des informations d'un administrateur dans la base
 POST http://127.0.0.1:8000/authapp/login/
@@ -102,10 +80,6 @@ Content-Type: application/json
 }
 
 
-<<<<<<< HEAD
-
-
-
 ###Obtenir la liste des delegues
 GET http://127.0.0.1:8000/authapp/pending-delegates/
 Content-Type: application/json
@@ -116,19 +90,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 
 
 
-### Approuver un délégué (avec authentification)
-POST http://127.0.0.1:8000/authapp/approve-delegate/
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM0NjE3MjY3LCJpYXQiOjE3MzQ2MTM2NjcsImp0aSI6ImQ1YWMxNWQ5MTJkOTQyMDZiN2FhYmMzNDNiOWY4NTU3IiwidXNlcl9pZCI6MX0.Iz59ciKSqtWDItM3y6MxhSTT1wrS1iF5SLhgUmZ4FR0
 
-{
-    "user_id": 3
-}
-=======
 ### Approuver un délégué (avec authentification)
 POST http://127.0.0.1:8000/authapp/approve-delegate/5/
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyNTU0MzYxLCJpYXQiOjE3MzI1NTA3NjEsImp0aSI6IjBjMGRjMzExMDIxMTRiZDdhMmJjYTkzNGQ4M2NmZDE4IiwidXNlcl9pZCI6MX0.1ToaEE0_V54NdSm9MnnAE8d5ZS4TjQMmi-EwXEcXB3U
 
 {}
->>>>>>> 346bbacefa667e29d78f773503ee09874ed8cf05
