@@ -8,3 +8,4 @@ WARNING 2024-12-30 22:59:34,625 log Not Found: /static/admin/css/nav_sidebar.css
 WARNING 2024-12-30 22:59:34,634 log Not Found: /static/admin/js/nav_sidebar.js
 WARNING 2024-12-30 22:59:34,638 log Not Found: /static/admin/css/responsive.css
 WARNING 2024-12-30 22:59:34,739 log Not Found: /static/admin/js/theme.js
+INFO 2024-12-31 07:53:01,623 autoreload Watching for file changes with StatReloader
