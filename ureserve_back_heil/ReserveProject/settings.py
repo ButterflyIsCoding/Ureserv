@@ -192,13 +192,13 @@ LOGGING = {
     },
     'handlers': {
         'file': {
-            'level': 'INFO',
+            'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': 'u_reserve.log',
             'formatter': 'verbose',
         },
         'console': {
-            'level': 'INFO',
+            'level': 'DEBUG',
             'class': 'logging.StreamHandler',
             'formatter': 'verbose',
         },
@@ -218,6 +218,12 @@ LOGGING = {
             'level': 'INFO',
         }
     },
+    'gunicorn': {
+    	'handlers': ['file', 'console'],
+    	'level': 'INFO',
+    	'propagate': True,
+	},
+
 }
 
 AUTH_USER_MODEL = 'authapp.CustomUser'
