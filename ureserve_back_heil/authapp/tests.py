@@ -101,4 +101,5 @@ class UserAPITests(APITestCase):
         # Récupérer les données mises à jour
         self.delegate_user.refresh_from_db()
         self.assertTrue(self.delegate_user.is_approved)
+        ############################################################
 

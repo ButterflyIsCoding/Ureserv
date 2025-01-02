@@ -25,7 +25,6 @@ oauthlib==3.2.2
 pillow==10.4.0
 prompt_toolkit==3.0.48
 asgiref==3.8.1
-backports.zoneinfo==0.2.1
 certifi==2024.8.30
 cffi==1.17.1
 charset-normalizer==3.4.0

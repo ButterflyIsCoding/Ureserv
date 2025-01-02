@@ -128,3 +128,32 @@ class LoginView(APIView):
             return Response({
                 'error': 'Utilisateur non trouvé'
             }, status=status.HTTP_404_NOT_FOUND)
+
+
+class GetUserInfoView(APIView):
+    """
+    Vue pour retourner les informations d'un utilisateur.
+    Accessible sans authentification.
+    """
+
+    def get(self, request):
+        # Récupérer l'utilisateur à partir des paramètres GET (email ou ID)
+        user_id = request.query_params.get('id')
+        email = request.query_params.get('email')
+
+        try:
+            if user_id:
+                user = CustomUser.objects.get(id=user_id)
+            elif email:
+                user = CustomUser.objects.get(email=email)
+            else:
+                return Response({'error': 'Veuillez fournir un ID ou un email.'}, status=status.HTTP_400_BAD_REQUEST)
+
+            # Sérialiser et retourner les données utilisateur
+            serializer = UserSerializer(user)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+        except CustomUser.DoesNotExist:
+            return Response({'error': 'Utilisateur non trouvé.'}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            return Response({'error': f'Une erreur est survenue : {str(e)}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
