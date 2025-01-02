@@ -44,5 +44,56 @@ WARNING 2025-01-02 13:41:53,693 log Not Found: /favicon.ico
 WARNING 2025-01-02 17:55:39,410 log Not Found: /favicon.ico
 WARNING 2025-01-02 18:15:42,929 log Not Found: /favicon.ico
 WARNING 2025-01-02 18:15:57,174 log Not Found: /lien_de_telechargement
+<<<<<<< HEAD
 WARNING 2025-01-02 19:19:31,547 log Not Found: /favicon.ico
 WARNING 2025-01-02 19:24:09,710 log Not Found: /favicon.ico
+=======
+INFO 2025-01-02 20:21:36,076 autoreload Watching for file changes with StatReloader
+INFO 2025-01-02 20:21:40,187 basehttp "GET / HTTP/1.1" 200 2564
+INFO 2025-01-02 20:21:40,267 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-01-02 20:21:41,420 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
+INFO 2025-01-02 20:21:59,281 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-01-02 20:21:59,570 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
+INFO 2025-01-02 20:21:59,790 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-02 20:21:59,795 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-02 20:21:59,796 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-02 20:21:59,799 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-02 20:21:59,803 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-01-02 20:21:59,803 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-02 20:21:59,804 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-01-02 20:40:42,277 basehttp "GET / HTTP/1.1" 200 2564
+INFO 2025-01-02 20:40:42,309 basehttp "GET /static/css/style.css HTTP/1.1" 200 2788
+INFO 2025-01-02 20:40:42,312 basehttp "GET /static/images/logo.jpg HTTP/1.1" 200 84638
+WARNING 2025-01-02 20:40:44,149 log Not Found: /favicon.ico
+WARNING 2025-01-02 20:40:44,150 basehttp "GET /favicon.ico HTTP/1.1" 404 2719
+INFO 2025-01-02 20:42:30,686 basehttp "GET / HTTP/1.1" 200 2640
+INFO 2025-01-02 20:43:16,536 basehttp "GET / HTTP/1.1" 200 2631
+INFO 2025-01-02 20:43:45,618 basehttp "GET / HTTP/1.1" 200 2635
+WARNING 2025-01-02 20:43:50,099 log Not Found: /lien_de_telechargement
+WARNING 2025-01-02 20:43:50,100 basehttp "GET /lien_de_telechargement HTTP/1.1" 404 2752
+WARNING 2025-01-02 20:43:53,657 log Not Found: /lien_de_telechargement
+WARNING 2025-01-02 20:43:53,659 basehttp "GET /lien_de_telechargement HTTP/1.1" 404 2752
+INFO 2025-01-02 20:46:24,293 basehttp "GET / HTTP/1.1" 200 2645
+WARNING 2025-01-02 20:46:26,300 log Not Found: /guide/guide d'utilisation.pdf
+WARNING 2025-01-02 20:46:26,303 basehttp "GET /guide/guide%20d'utilisation.pdf HTTP/1.1" 404 2790
+INFO 2025-01-02 21:24:43,852 basehttp "GET / HTTP/1.1" 200 2656
+WARNING 2025-01-02 21:24:45,892 basehttp "GET /static/downloads/guide_d_utilisation.pdf HTTP/1.1" 404 1858
+WARNING 2025-01-02 21:26:29,414 basehttp "GET /static/downloads/guide_d_utilisation.pdf HTTP/1.1" 404 1858
+WARNING 2025-01-02 21:26:33,068 basehttp "GET /static/downloads/guide_d_utilisation.pdf HTTP/1.1" 404 1858
+INFO 2025-01-02 21:26:52,569 autoreload Watching for file changes with StatReloader
+INFO 2025-01-02 21:27:07,245 basehttp "GET / HTTP/1.1" 200 2647
+INFO 2025-01-02 21:27:08,217 basehttp "GET / HTTP/1.1" 200 2647
+INFO 2025-01-02 21:27:08,401 basehttp "GET / HTTP/1.1" 200 2647
+INFO 2025-01-02 21:27:10,215 basehttp "GET /static/downloads/User_guide.pdf HTTP/1.1" 200 2385783
+INFO 2025-01-02 21:30:16,696 basehttp "GET / HTTP/1.1" 200 2647
+INFO 2025-01-02 21:30:16,781 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-01-02 21:30:16,783 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
+WARNING 2025-01-02 21:30:16,804 log Not Found: /favicon.ico
+INFO 2025-01-02 21:30:18,714 basehttp "GET /static/downloads/User_guide.pdf HTTP/1.1" 200 2385783
+INFO 2025-01-02 21:32:14,469 basehttp "GET / HTTP/1.1" 200 2663
+INFO 2025-01-02 21:32:14,695 basehttp "GET / HTTP/1.1" 200 2663
+INFO 2025-01-02 21:33:06,715 basehttp "GET / HTTP/1.1" 200 2679
+INFO 2025-01-02 21:33:06,876 basehttp "GET / HTTP/1.1" 200 2679
+INFO 2025-01-02 21:33:07,103 basehttp "GET / HTTP/1.1" 200 2679
+WARNING 2025-01-02 21:33:08,713 basehttp "GET /static/downloads/app.apk HTTP/1.1" 404 1810
+>>>>>>> 7347bb544fe8e5df6ec2f04dde6729fff849ff72
