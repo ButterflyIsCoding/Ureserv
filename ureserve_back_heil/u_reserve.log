@@ -92,3 +92,9 @@ INFO 2025-01-02 21:33:06,715 basehttp "GET / HTTP/1.1" 200 2679
 INFO 2025-01-02 21:33:06,876 basehttp "GET / HTTP/1.1" 200 2679
 INFO 2025-01-02 21:33:07,103 basehttp "GET / HTTP/1.1" 200 2679
 WARNING 2025-01-02 21:33:08,713 basehttp "GET /static/downloads/app.apk HTTP/1.1" 404 1810
+INFO 2025-01-02 21:54:49,258 autoreload Watching for file changes with StatReloader
+INFO 2025-01-02 21:55:04,141 basehttp "GET / HTTP/1.1" 200 2675
+INFO 2025-01-02 21:55:04,157 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-01-02 21:55:04,160 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
+INFO 2025-01-02 21:58:00,815 basehttp "GET / HTTP/1.1" 200 2679
+INFO 2025-01-02 21:59:49,940 basehttp "GET / HTTP/1.1" 200 2679
