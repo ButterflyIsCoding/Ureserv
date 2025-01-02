@@ -3,18 +3,18 @@
 
 ---
 
-## Table des Matières
+## Content
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Installation/Deployment](#installation)
 4. [Usage](#usage)
-5. [Project architecture](#project architecture)
+5. [Project_architecture](#project_architecture)
 6. [License](#license)
 
 --
 
 
-## Introduction
+## Overview
 
 The U-RESERVE application is designed to streamline the process of classroom reservations within the IT department from L1 to L3. This application aims to improve planning efficiency and manage classroom usage, catering primarily to students, teachers, and delegates within this department.
 
