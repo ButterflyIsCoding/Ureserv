@@ -118,7 +118,7 @@ nav a:hover {
 }
 
 .feature:hover {
-    background-color: gray;
+    background-color: var(--violet);
 }
 
 /* Pied de page (Footer) */
