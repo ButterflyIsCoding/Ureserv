@@ -173,3 +173,48 @@ footer p {
     }
 }
 
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8em; /* Réduire la taille du titre */
+    }
+
+    .hero-content p {
+        font-size: 1em; /* Réduire la taille du texte */
+    }
+
+    .btn-download {
+        padding: 5px 10px; /* Réduire la taille des boutons */
+        font-size: 0.9em;   /* Ajuster la taille du texte */
+    }
+
+    nav ul {
+        flex-direction: column; /* Disposition verticale pour le menu */
+        gap: 15px; /* Espacement entre les liens */
+    }
+
+    .features-container {
+        flex-direction: column; /* Une seule colonne pour les features */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .feature {
+        width: 90%; /* Utilise presque toute la largeur */
+    }
+
+    .logo img {
+        height: 40px; /* Ajuster la taille du logo */
+    }
+
+    footer {
+        flex-direction: column; /* Empile les éléments du footer */
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links a {
+        display: block; /* Met les liens sociaux sur des lignes séparées */
+        margin: 5px 0;
+    }
+}
