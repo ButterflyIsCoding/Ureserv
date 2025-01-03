@@ -163,3 +163,23 @@ WARNING 2025-01-03 16:45:03,345 log Not Found: /favicon.ico
 WARNING 2025-01-03 16:45:58,634 log Unauthorized: /authapp/profile/
 WARNING 2025-01-03 16:47:30,067 log Bad Request: /authapp/profile/
 WARNING 2025-01-03 21:10:30,941 log Not Found: /favicon.ico
+INFO 2025-01-03 21:31:20,325 autoreload Watching for file changes with StatReloader
+INFO 2025-01-03 21:31:27,366 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 21:31:27,635 basehttp "GET /static/css/style.css HTTP/1.1" 200 3885
+INFO 2025-01-03 21:31:29,836 basehttp "GET /static/images/logo.jpg HTTP/1.1" 200 84638
+INFO 2025-01-03 21:31:33,713 basehttp "GET /static/css/style.css HTTP/1.1" 200 3885
+INFO 2025-01-03 21:32:16,968 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 21:32:17,036 basehttp "GET /static/css/style.css HTTP/1.1" 200 3884
+INFO 2025-01-03 21:32:18,098 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 21:32:18,161 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-01-03 21:32:28,243 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 21:32:28,300 basehttp "GET /static/css/style.css HTTP/1.1" 200 3885
+INFO 2025-01-03 21:35:04,460 basehttp "GET / HTTP/1.1" 200 2717
+INFO 2025-01-03 21:35:04,516 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-01-03 21:35:04,991 basehttp "GET / HTTP/1.1" 200 2717
+INFO 2025-01-03 21:36:39,712 basehttp "GET / HTTP/1.1" 200 2717
+INFO 2025-01-03 21:36:39,773 basehttp "GET /static/css/style.css HTTP/1.1" 200 3884
+INFO 2025-01-03 21:37:02,469 basehttp "GET / HTTP/1.1" 200 2717
+INFO 2025-01-03 21:37:02,533 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
+INFO 2025-01-03 21:39:12,028 basehttp "GET / HTTP/1.1" 200 2717
+INFO 2025-01-03 21:39:12,059 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
