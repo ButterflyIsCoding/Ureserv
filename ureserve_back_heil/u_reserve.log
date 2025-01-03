@@ -120,6 +120,9 @@ WARNING 2025-01-03 06:19:47,177 log Not Found: /favicon.ico
 WARNING 2025-01-03 06:19:49,074 log Not Found: /favicon.ico
 WARNING 2025-01-03 08:36:33,876 log Not Found: /favicon.ico
 WARNING 2025-01-03 08:36:38,024 log Not Found: /favicon.ico
+<<<<<<< HEAD
+WARNING 2025-01-03 11:12:53,331 log Not Found: /favicon.ico
+=======
 INFO 2025-01-03 11:14:54,168 autoreload Watching for file changes with StatReloader
 INFO 2025-01-03 11:14:59,600 basehttp "GET / HTTP/1.1" 200 2690
 INFO 2025-01-03 11:14:59,691 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
@@ -139,3 +142,24 @@ INFO 2025-01-03 11:22:01,521 basehttp "GET / HTTP/1.1" 200 2690
 INFO 2025-01-03 11:22:01,605 basehttp "GET /static/css/style.css HTTP/1.1" 200 2795
 INFO 2025-01-03 11:22:51,807 basehttp "GET / HTTP/1.1" 200 2690
 INFO 2025-01-03 11:22:51,833 basehttp "GET /static/css/style.css HTTP/1.1" 200 2790
+>>>>>>> d44983aac415828e4cd50fe11c9782027e255596
+WARNING 2025-01-03 11:28:33,701 log Not Found: /favicon.ico
+WARNING 2025-01-03 11:35:56,248 log Not Found: /favicon.ico
+WARNING 2025-01-03 14:27:48,988 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:38:28,080 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:38:32,670 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:38:59,065 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:39:16,328 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:40:43,157 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:40:52,435 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:40:58,593 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:41:04,486 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:41:21,248 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:41:24,587 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:41:34,212 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:42:19,124 log Unauthorized: /authapp/profile/
+WARNING 2025-01-03 16:43:07,259 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:45:03,345 log Not Found: /favicon.ico
+WARNING 2025-01-03 16:45:58,634 log Unauthorized: /authapp/profile/
+WARNING 2025-01-03 16:47:30,067 log Bad Request: /authapp/profile/
+WARNING 2025-01-03 21:10:30,941 log Not Found: /favicon.ico
