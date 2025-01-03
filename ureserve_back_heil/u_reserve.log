@@ -44,6 +44,10 @@ WARNING 2025-01-02 13:41:53,693 log Not Found: /favicon.ico
 WARNING 2025-01-02 17:55:39,410 log Not Found: /favicon.ico
 WARNING 2025-01-02 18:15:42,929 log Not Found: /favicon.ico
 WARNING 2025-01-02 18:15:57,174 log Not Found: /lien_de_telechargement
+<<<<<<< HEAD
+WARNING 2025-01-02 19:19:31,547 log Not Found: /favicon.ico
+WARNING 2025-01-02 19:24:09,710 log Not Found: /favicon.ico
+=======
 INFO 2025-01-02 20:21:36,076 autoreload Watching for file changes with StatReloader
 INFO 2025-01-02 20:21:40,187 basehttp "GET / HTTP/1.1" 200 2564
 INFO 2025-01-02 20:21:40,267 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
@@ -92,9 +96,27 @@ INFO 2025-01-02 21:33:06,715 basehttp "GET / HTTP/1.1" 200 2679
 INFO 2025-01-02 21:33:06,876 basehttp "GET / HTTP/1.1" 200 2679
 INFO 2025-01-02 21:33:07,103 basehttp "GET / HTTP/1.1" 200 2679
 WARNING 2025-01-02 21:33:08,713 basehttp "GET /static/downloads/app.apk HTTP/1.1" 404 1810
+<<<<<<< HEAD
+>>>>>>> 7347bb544fe8e5df6ec2f04dde6729fff849ff72
+=======
 INFO 2025-01-02 21:54:49,258 autoreload Watching for file changes with StatReloader
 INFO 2025-01-02 21:55:04,141 basehttp "GET / HTTP/1.1" 200 2675
 INFO 2025-01-02 21:55:04,157 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
 INFO 2025-01-02 21:55:04,160 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
 INFO 2025-01-02 21:58:00,815 basehttp "GET / HTTP/1.1" 200 2679
 INFO 2025-01-02 21:59:49,940 basehttp "GET / HTTP/1.1" 200 2679
+>>>>>>> 928ea6ad6e10147c1f7b9ad54c82146c159ce29c
+WARNING 2025-01-02 23:28:40,364 log Unauthorized: /api/reservations-by-level/
+WARNING 2025-01-03 02:24:30,992 log Unauthorized: /api/reservations-by-level/
+WARNING 2025-01-03 03:24:17,170 log Unauthorized: /api/reservations-by-level/
+WARNING 2025-01-03 03:24:33,889 log Bad Request: /authapp/profile/
+WARNING 2025-01-03 03:25:17,291 log Bad Request: /authapp/profile/
+WARNING 2025-01-03 03:25:26,083 log Unauthorized: /api/notifications-by-level/
+WARNING 2025-01-03 03:25:36,332 log Unauthorized: /api/reservations-by-level/
+WARNING 2025-01-03 04:12:55,135 log Not Found: /favicon.ico
+WARNING 2025-01-03 06:18:59,157 log Not Found: /favicon.ico
+WARNING 2025-01-03 06:19:44,799 log Not Found: /favicon.ico
+WARNING 2025-01-03 06:19:47,177 log Not Found: /favicon.ico
+WARNING 2025-01-03 06:19:49,074 log Not Found: /favicon.ico
+WARNING 2025-01-03 08:36:33,876 log Not Found: /favicon.ico
+WARNING 2025-01-03 08:36:38,024 log Not Found: /favicon.ico
