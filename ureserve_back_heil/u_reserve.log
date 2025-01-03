@@ -120,4 +120,26 @@ WARNING 2025-01-03 06:19:47,177 log Not Found: /favicon.ico
 WARNING 2025-01-03 06:19:49,074 log Not Found: /favicon.ico
 WARNING 2025-01-03 08:36:33,876 log Not Found: /favicon.ico
 WARNING 2025-01-03 08:36:38,024 log Not Found: /favicon.ico
+<<<<<<< HEAD
 WARNING 2025-01-03 11:12:53,331 log Not Found: /favicon.ico
+=======
+INFO 2025-01-03 11:14:54,168 autoreload Watching for file changes with StatReloader
+INFO 2025-01-03 11:14:59,600 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 11:14:59,691 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
+INFO 2025-01-03 11:14:59,718 basehttp "GET /static/css/style.css HTTP/1.1" 200 2797
+INFO 2025-01-03 11:15:00,287 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 11:15:34,767 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 11:15:34,824 basehttp "GET /static/css/style.css HTTP/1.1" 200 2788
+INFO 2025-01-03 11:16:18,910 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 11:16:18,922 basehttp "GET /static/css/style.css HTTP/1.1" 200 2790
+INFO 2025-01-03 11:17:36,288 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 11:17:36,342 basehttp "GET /static/css/style.css HTTP/1.1" 200 2788
+INFO 2025-01-03 11:17:52,879 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 11:17:52,929 basehttp "GET /static/css/style.css HTTP/1.1" 200 2788
+INFO 2025-01-03 11:20:26,179 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 11:20:26,196 basehttp "GET /static/css/style.css HTTP/1.1" 200 2797
+INFO 2025-01-03 11:22:01,521 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 11:22:01,605 basehttp "GET /static/css/style.css HTTP/1.1" 200 2795
+INFO 2025-01-03 11:22:51,807 basehttp "GET / HTTP/1.1" 200 2690
+INFO 2025-01-03 11:22:51,833 basehttp "GET /static/css/style.css HTTP/1.1" 200 2790
+>>>>>>> d44983aac415828e4cd50fe11c9782027e255596
