@@ -179,7 +179,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'nana.heil@facsciences-uy1.cm'  # Remplacez par votre adresse Gmail
 EMAIL_HOST_PASSWORD = 'bhmr phou guvx qjqm'  # Mot de passe d'application Google
 DEFAULT_FROM_EMAIL = 'nana.heil@facsciences-uy1.cm'  # L'adresse qui apparaîtra comme expéditeur
-FRONTEND_URL = 'http://127.0.0.1:8000'
+FRONTEND_URL = 'http://ureserve.smartcloudservices.cloud'
 
 
 # Mise à jour de la configuration LOGGING dans settings.py
