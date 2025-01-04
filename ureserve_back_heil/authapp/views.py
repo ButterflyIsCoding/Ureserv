@@ -157,3 +157,18 @@ class GetUserInfoView(APIView):
             return Response({'error': 'Utilisateur non trouvé.'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
             return Response({'error': f'Une erreur est survenue : {str(e)}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+
+class GetAllUsersView(APIView):
+    """
+    API qui retourne tous les utilisateurs.
+    Accessible sans authentification.
+    """
+    def get(self, request):
+        try:
+            users = CustomUser.objects.all()  # Récupérer tous les utilisateurs
+            serializer = UserSerializer(users, many=True)  # Sérialiser les données
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({'error': f'Une erreur est survenue : {str(e)}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
