@@ -98,5 +98,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 
 {}
 
-###
+### Recuperer les infos d'un utilisateur grace a l'email
 GET http://127.0.0.1:8000/authapp/profile/?email=tes@test1.com
+
+
+
+### Recuperer tous les utilisateurs de la BD
+GET http://127.0.0.1:8000/authapp/users/
+Content-Type: application/json

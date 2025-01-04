@@ -7,4 +7,5 @@ urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
     path('pending-delegates/', PendingDelegatesView.as_view(), name='pending-delegates'),
     path('profile/', GetUserInfoView.as_view(), name='profile'),
+    path('users/', GetAllUsersView.as_view(), name='get-all-users'),
 ]
