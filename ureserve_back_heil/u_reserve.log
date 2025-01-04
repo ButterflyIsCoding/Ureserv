@@ -184,3 +184,32 @@ INFO 2025-01-03 21:37:02,533 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
 INFO 2025-01-03 21:39:12,028 basehttp "GET / HTTP/1.1" 200 2717
 INFO 2025-01-03 21:39:12,059 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
 WARNING 2025-01-03 21:57:55,474 log Not Found: /favicon.ico
+WARNING 2025-01-04 01:15:51,805 log Unauthorized: /authapp/login/
+WARNING 2025-01-04 01:16:17,651 log Unauthorized: /api/reservations-by-level/
+WARNING 2025-01-04 01:16:25,246 log Bad Request: /authapp/profile/
+WARNING 2025-01-04 01:27:05,531 log Bad Request: /authapp/profile/
+WARNING 2025-01-04 02:53:00,413 log Unauthorized: /api/reservations-by-level/
+WARNING 2025-01-04 02:53:08,304 log Bad Request: /authapp/profile/
+WARNING 2025-01-04 02:53:16,447 log Bad Request: /authapp/profile/
+WARNING 2025-01-04 03:01:08,532 log Bad Request: /authapp/profile/
+WARNING 2025-01-04 03:09:59,746 log Not Found: /api/research/
+WARNING 2025-01-04 03:10:10,862 log Unauthorized: /authapp/profile/
+WARNING 2025-01-04 03:10:32,462 log Bad Request: /authapp/profile/
+WARNING 2025-01-04 03:12:10,475 log Unauthorized: /api/reservations-by-level/
+WARNING 2025-01-04 03:12:14,641 log Not Found: /api/research/
+WARNING 2025-01-04 03:12:18,022 log Unauthorized: /authapp/profile/
+WARNING 2025-01-04 03:12:26,327 log Unauthorized: /api/notifications-by-level/
+WARNING 2025-01-04 03:12:38,612 log Bad Request: /authapp/profile/
+WARNING 2025-01-04 06:26:28,289 log Not Found: /api/research/
+WARNING 2025-01-04 06:26:36,962 log Unauthorized: /authapp/profile/
+WARNING 2025-01-04 06:26:46,094 log Unauthorized: /api/reservations-by-level/
+WARNING 2025-01-04 06:26:58,824 log Unauthorized: /api/notifications-by-level/
+WARNING 2025-01-04 06:44:36,000 log Not Found: /favicon.ico
+WARNING 2025-01-04 06:45:33,233 log Not Found: /favicon.ico
+WARNING 2025-01-04 06:45:40,861 log Not Found: /favicon.ico
+WARNING 2025-01-04 06:45:58,484 log Not Found: /favicon.ico
+WARNING 2025-01-04 06:48:00,498 log Not Found: /favicon.ico
+WARNING 2025-01-04 06:48:00,839 log Not Found: /favicon.ico
+WARNING 2025-01-04 08:19:28,430 log Not Found: /api/research/
+WARNING 2025-01-04 08:19:48,093 log Unauthorized: /authapp/profile/
+WARNING 2025-01-04 08:19:56,971 log Not Found: /api/research/
