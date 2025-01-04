@@ -254,6 +254,17 @@ class InfoReservation(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
+class InfoHall(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request, hall_name):
+        hall = get_object_or_404(Hall, name=hall_name)
+        serializer = HallSerializer(hall)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+
+
 # Profile: Get the profile information of the currently authenticated user
 class Profile(APIView):
     permission_classes = [permissions.IsAuthenticated]
