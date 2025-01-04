@@ -110,33 +110,8 @@ class MakeReservation(APIView):
         except ValueError:
             return Response({"error": "Invalid date or time format. Use 'YYYY-MM-DD' for date and 'HH:MM:SS' for time."}, status=status.HTTP_400_BAD_REQUEST)
 
-        current_time = now()
-
-        # Check if the reservation date is in the past
-        if reservation_date < current_time.date():
-            return Response({"error": "Cannot make a reservation for a past date."}, status=status.HTTP_400_BAD_REQUEST)
-
-        # Ensure the reservation start time is not in the past for the current day
-        if reservation_date == current_time.date() and start_time <= current_time.time():
-            return Response({"error": "Cannot make a reservation for a past time on the same day."}, status=status.HTTP_400_BAD_REQUEST)
-
-        # Validate that the end time is after the start time
-        if end_time <= start_time:
-            return Response({"error": "End time must be after the start time."}, status=status.HTTP_400_BAD_REQUEST)
-
-        # Check for overlapping reservations for the same hall at the requested time
         hall = get_object_or_404(Hall, id=data.get('hall_id'))
-        overlapping_reservations = Reservation.objects.filter(
-            hall=hall,
-            date=reservation_date
-        ).filter(
-            start_time__lt=end_time,  # New reservation overlaps with an existing one’s end time
-            end_time__gt=start_time   # New reservation overlaps with an existing one’s start time
-        )
-
-        if overlapping_reservations.exists():
-            return Response({"error": "This time slot is already reserved for the selected hall."}, status=status.HTTP_400_BAD_REQUEST)
-
+        
         # Create the reservation and send email to professor for validation
         token = str(uuid.uuid4())
         reservation = Reservation.objects.create(
