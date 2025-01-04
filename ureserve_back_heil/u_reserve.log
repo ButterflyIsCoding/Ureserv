@@ -44,68 +44,6 @@ WARNING 2025-01-02 13:41:53,693 log Not Found: /favicon.ico
 WARNING 2025-01-02 17:55:39,410 log Not Found: /favicon.ico
 WARNING 2025-01-02 18:15:42,929 log Not Found: /favicon.ico
 WARNING 2025-01-02 18:15:57,174 log Not Found: /lien_de_telechargement
-<<<<<<< HEAD
-WARNING 2025-01-02 19:19:31,547 log Not Found: /favicon.ico
-WARNING 2025-01-02 19:24:09,710 log Not Found: /favicon.ico
-=======
-INFO 2025-01-02 20:21:36,076 autoreload Watching for file changes with StatReloader
-INFO 2025-01-02 20:21:40,187 basehttp "GET / HTTP/1.1" 200 2564
-INFO 2025-01-02 20:21:40,267 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
-INFO 2025-01-02 20:21:41,420 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
-INFO 2025-01-02 20:21:59,281 basehttp "GET /admin/ HTTP/1.1" 302 0
-INFO 2025-01-02 20:21:59,570 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
-INFO 2025-01-02 20:21:59,790 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
-INFO 2025-01-02 20:21:59,795 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
-INFO 2025-01-02 20:21:59,796 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
-INFO 2025-01-02 20:21:59,799 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
-INFO 2025-01-02 20:21:59,803 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
-INFO 2025-01-02 20:21:59,803 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
-INFO 2025-01-02 20:21:59,804 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
-INFO 2025-01-02 20:40:42,277 basehttp "GET / HTTP/1.1" 200 2564
-INFO 2025-01-02 20:40:42,309 basehttp "GET /static/css/style.css HTTP/1.1" 200 2788
-INFO 2025-01-02 20:40:42,312 basehttp "GET /static/images/logo.jpg HTTP/1.1" 200 84638
-WARNING 2025-01-02 20:40:44,149 log Not Found: /favicon.ico
-WARNING 2025-01-02 20:40:44,150 basehttp "GET /favicon.ico HTTP/1.1" 404 2719
-INFO 2025-01-02 20:42:30,686 basehttp "GET / HTTP/1.1" 200 2640
-INFO 2025-01-02 20:43:16,536 basehttp "GET / HTTP/1.1" 200 2631
-INFO 2025-01-02 20:43:45,618 basehttp "GET / HTTP/1.1" 200 2635
-WARNING 2025-01-02 20:43:50,099 log Not Found: /lien_de_telechargement
-WARNING 2025-01-02 20:43:50,100 basehttp "GET /lien_de_telechargement HTTP/1.1" 404 2752
-WARNING 2025-01-02 20:43:53,657 log Not Found: /lien_de_telechargement
-WARNING 2025-01-02 20:43:53,659 basehttp "GET /lien_de_telechargement HTTP/1.1" 404 2752
-INFO 2025-01-02 20:46:24,293 basehttp "GET / HTTP/1.1" 200 2645
-WARNING 2025-01-02 20:46:26,300 log Not Found: /guide/guide d'utilisation.pdf
-WARNING 2025-01-02 20:46:26,303 basehttp "GET /guide/guide%20d'utilisation.pdf HTTP/1.1" 404 2790
-INFO 2025-01-02 21:24:43,852 basehttp "GET / HTTP/1.1" 200 2656
-WARNING 2025-01-02 21:24:45,892 basehttp "GET /static/downloads/guide_d_utilisation.pdf HTTP/1.1" 404 1858
-WARNING 2025-01-02 21:26:29,414 basehttp "GET /static/downloads/guide_d_utilisation.pdf HTTP/1.1" 404 1858
-WARNING 2025-01-02 21:26:33,068 basehttp "GET /static/downloads/guide_d_utilisation.pdf HTTP/1.1" 404 1858
-INFO 2025-01-02 21:26:52,569 autoreload Watching for file changes with StatReloader
-INFO 2025-01-02 21:27:07,245 basehttp "GET / HTTP/1.1" 200 2647
-INFO 2025-01-02 21:27:08,217 basehttp "GET / HTTP/1.1" 200 2647
-INFO 2025-01-02 21:27:08,401 basehttp "GET / HTTP/1.1" 200 2647
-INFO 2025-01-02 21:27:10,215 basehttp "GET /static/downloads/User_guide.pdf HTTP/1.1" 200 2385783
-INFO 2025-01-02 21:30:16,696 basehttp "GET / HTTP/1.1" 200 2647
-INFO 2025-01-02 21:30:16,781 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
-INFO 2025-01-02 21:30:16,783 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
-WARNING 2025-01-02 21:30:16,804 log Not Found: /favicon.ico
-INFO 2025-01-02 21:30:18,714 basehttp "GET /static/downloads/User_guide.pdf HTTP/1.1" 200 2385783
-INFO 2025-01-02 21:32:14,469 basehttp "GET / HTTP/1.1" 200 2663
-INFO 2025-01-02 21:32:14,695 basehttp "GET / HTTP/1.1" 200 2663
-INFO 2025-01-02 21:33:06,715 basehttp "GET / HTTP/1.1" 200 2679
-INFO 2025-01-02 21:33:06,876 basehttp "GET / HTTP/1.1" 200 2679
-INFO 2025-01-02 21:33:07,103 basehttp "GET / HTTP/1.1" 200 2679
-WARNING 2025-01-02 21:33:08,713 basehttp "GET /static/downloads/app.apk HTTP/1.1" 404 1810
-<<<<<<< HEAD
->>>>>>> 7347bb544fe8e5df6ec2f04dde6729fff849ff72
-=======
-INFO 2025-01-02 21:54:49,258 autoreload Watching for file changes with StatReloader
-INFO 2025-01-02 21:55:04,141 basehttp "GET / HTTP/1.1" 200 2675
-INFO 2025-01-02 21:55:04,157 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
-INFO 2025-01-02 21:55:04,160 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
-INFO 2025-01-02 21:58:00,815 basehttp "GET / HTTP/1.1" 200 2679
-INFO 2025-01-02 21:59:49,940 basehttp "GET / HTTP/1.1" 200 2679
->>>>>>> 928ea6ad6e10147c1f7b9ad54c82146c159ce29c
 WARNING 2025-01-02 23:28:40,364 log Unauthorized: /api/reservations-by-level/
 WARNING 2025-01-03 02:24:30,992 log Unauthorized: /api/reservations-by-level/
 WARNING 2025-01-03 03:24:17,170 log Unauthorized: /api/reservations-by-level/
@@ -120,29 +58,6 @@ WARNING 2025-01-03 06:19:47,177 log Not Found: /favicon.ico
 WARNING 2025-01-03 06:19:49,074 log Not Found: /favicon.ico
 WARNING 2025-01-03 08:36:33,876 log Not Found: /favicon.ico
 WARNING 2025-01-03 08:36:38,024 log Not Found: /favicon.ico
-<<<<<<< HEAD
-WARNING 2025-01-03 11:12:53,331 log Not Found: /favicon.ico
-=======
-INFO 2025-01-03 11:14:54,168 autoreload Watching for file changes with StatReloader
-INFO 2025-01-03 11:14:59,600 basehttp "GET / HTTP/1.1" 200 2690
-INFO 2025-01-03 11:14:59,691 basehttp "GET /static/images/logo.jpg HTTP/1.1" 304 0
-INFO 2025-01-03 11:14:59,718 basehttp "GET /static/css/style.css HTTP/1.1" 200 2797
-INFO 2025-01-03 11:15:00,287 basehttp "GET / HTTP/1.1" 200 2690
-INFO 2025-01-03 11:15:34,767 basehttp "GET / HTTP/1.1" 200 2690
-INFO 2025-01-03 11:15:34,824 basehttp "GET /static/css/style.css HTTP/1.1" 200 2788
-INFO 2025-01-03 11:16:18,910 basehttp "GET / HTTP/1.1" 200 2690
-INFO 2025-01-03 11:16:18,922 basehttp "GET /static/css/style.css HTTP/1.1" 200 2790
-INFO 2025-01-03 11:17:36,288 basehttp "GET / HTTP/1.1" 200 2690
-INFO 2025-01-03 11:17:36,342 basehttp "GET /static/css/style.css HTTP/1.1" 200 2788
-INFO 2025-01-03 11:17:52,879 basehttp "GET / HTTP/1.1" 200 2690
-INFO 2025-01-03 11:17:52,929 basehttp "GET /static/css/style.css HTTP/1.1" 200 2788
-INFO 2025-01-03 11:20:26,179 basehttp "GET / HTTP/1.1" 200 2690
-INFO 2025-01-03 11:20:26,196 basehttp "GET /static/css/style.css HTTP/1.1" 200 2797
-INFO 2025-01-03 11:22:01,521 basehttp "GET / HTTP/1.1" 200 2690
-INFO 2025-01-03 11:22:01,605 basehttp "GET /static/css/style.css HTTP/1.1" 200 2795
-INFO 2025-01-03 11:22:51,807 basehttp "GET / HTTP/1.1" 200 2690
-INFO 2025-01-03 11:22:51,833 basehttp "GET /static/css/style.css HTTP/1.1" 200 2790
->>>>>>> d44983aac415828e4cd50fe11c9782027e255596
 WARNING 2025-01-03 11:28:33,701 log Not Found: /favicon.ico
 WARNING 2025-01-03 11:35:56,248 log Not Found: /favicon.ico
 WARNING 2025-01-03 14:27:48,988 log Not Found: /favicon.ico
@@ -184,32 +99,3 @@ INFO 2025-01-03 21:37:02,533 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
 INFO 2025-01-03 21:39:12,028 basehttp "GET / HTTP/1.1" 200 2717
 INFO 2025-01-03 21:39:12,059 basehttp "GET /static/css/style.css HTTP/1.1" 304 0
 WARNING 2025-01-03 21:57:55,474 log Not Found: /favicon.ico
-WARNING 2025-01-04 01:15:51,805 log Unauthorized: /authapp/login/
-WARNING 2025-01-04 01:16:17,651 log Unauthorized: /api/reservations-by-level/
-WARNING 2025-01-04 01:16:25,246 log Bad Request: /authapp/profile/
-WARNING 2025-01-04 01:27:05,531 log Bad Request: /authapp/profile/
-WARNING 2025-01-04 02:53:00,413 log Unauthorized: /api/reservations-by-level/
-WARNING 2025-01-04 02:53:08,304 log Bad Request: /authapp/profile/
-WARNING 2025-01-04 02:53:16,447 log Bad Request: /authapp/profile/
-WARNING 2025-01-04 03:01:08,532 log Bad Request: /authapp/profile/
-WARNING 2025-01-04 03:09:59,746 log Not Found: /api/research/
-WARNING 2025-01-04 03:10:10,862 log Unauthorized: /authapp/profile/
-WARNING 2025-01-04 03:10:32,462 log Bad Request: /authapp/profile/
-WARNING 2025-01-04 03:12:10,475 log Unauthorized: /api/reservations-by-level/
-WARNING 2025-01-04 03:12:14,641 log Not Found: /api/research/
-WARNING 2025-01-04 03:12:18,022 log Unauthorized: /authapp/profile/
-WARNING 2025-01-04 03:12:26,327 log Unauthorized: /api/notifications-by-level/
-WARNING 2025-01-04 03:12:38,612 log Bad Request: /authapp/profile/
-WARNING 2025-01-04 06:26:28,289 log Not Found: /api/research/
-WARNING 2025-01-04 06:26:36,962 log Unauthorized: /authapp/profile/
-WARNING 2025-01-04 06:26:46,094 log Unauthorized: /api/reservations-by-level/
-WARNING 2025-01-04 06:26:58,824 log Unauthorized: /api/notifications-by-level/
-WARNING 2025-01-04 06:44:36,000 log Not Found: /favicon.ico
-WARNING 2025-01-04 06:45:33,233 log Not Found: /favicon.ico
-WARNING 2025-01-04 06:45:40,861 log Not Found: /favicon.ico
-WARNING 2025-01-04 06:45:58,484 log Not Found: /favicon.ico
-WARNING 2025-01-04 06:48:00,498 log Not Found: /favicon.ico
-WARNING 2025-01-04 06:48:00,839 log Not Found: /favicon.ico
-WARNING 2025-01-04 08:19:28,430 log Not Found: /api/research/
-WARNING 2025-01-04 08:19:48,093 log Unauthorized: /authapp/profile/
-WARNING 2025-01-04 08:19:56,971 log Not Found: /api/research/
