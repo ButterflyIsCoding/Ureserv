@@ -378,3 +378,15 @@ class AutoDeleteExpiredReservations(APIView):
         expired_reservations.delete()
 
         return Response({"message": "Expired reservations deleted successfully."}, status=status.HTTP_200_OK)
+
+##Return all halls
+class ResearchHalls(APIView):
+
+    def get(self, request):
+        halls = []
+        for hall in Hall.objects.all():
+            halls.append({
+                "hall": HallSerializer(hall).data
+            })
+
+        return Response(halls, status=status.HTTP_200_OK)

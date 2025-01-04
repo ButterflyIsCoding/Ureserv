@@ -2,7 +2,7 @@ from django.urls import path
 from .views import (
     PermissionMakeReservation, ResearchDate, MakeReservation,
     ValidateReservation, GetReservationsByLevel, GetNotificationsByLevel, InfoReservation, Profile, PotentialReservationsToCancel,
-    CancelReservation, CancelAllReservations, AutoDeleteExpiredReservations, InfoHall
+    CancelReservation, CancelAllReservations, AutoDeleteExpiredReservations, InfoHall, ResearchHalls
 )
 
 urlpatterns = [
@@ -19,5 +19,5 @@ urlpatterns = [
     path('cancel-reservation/<int:reservation_id>/', CancelReservation.as_view(), name='cancel-reservation'),
     path('cancel-all-reservations/<str:date>/', CancelAllReservations.as_view(), name='cancel-all-reservations'),
     path('auto-delete-expired-reservations/', AutoDeleteExpiredReservations.as_view(), name='auto-delete-expired-reservations'),
-
+    path('research-hall/', ResearchHalls.as_view(), name='research-hall'),
 ]
