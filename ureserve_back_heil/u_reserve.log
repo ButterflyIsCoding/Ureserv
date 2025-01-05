@@ -210,3 +210,14 @@ INFO 2025-01-04 23:16:34,701 autoreload /app/ReserveProject/settings.py changed,
 INFO 2025-01-04 23:16:35,445 autoreload Watching for file changes with StatReloader
 INFO 2025-01-04 23:16:41,073 autoreload /app/ReserveProject/settings.py changed, reloading.
 INFO 2025-01-04 23:16:41,791 autoreload Watching for file changes with StatReloader
+WARNING 2025-01-04 23:24:28,134 log Not Found: /validate-reservation/d0d4bcdc-0077-49f9-a972-4c76a15d1549
+WARNING 2025-01-04 23:24:28,135 basehttp "GET /validate-reservation/d0d4bcdc-0077-49f9-a972-4c76a15d1549 HTTP/1.1" 404 2857
+INFO 2025-01-04 23:33:47,938 basehttp "GET /api/validate-reservation/0055caf0-9f34-4c47-a2a1-bcdf83c2d7dd HTTP/1.1" 301 0
+WARNING 2025-01-04 23:33:47,948 log Not Found: /api/validate-reservation/0055caf0-9f34-4c47-a2a1-bcdf83c2d7dd/
+WARNING 2025-01-04 23:33:47,949 basehttp "GET /api/validate-reservation/0055caf0-9f34-4c47-a2a1-bcdf83c2d7dd/ HTTP/1.1" 404 37
+WARNING 2025-01-04 23:34:00,422 log Unauthorized: /api/permission/
+WARNING 2025-01-04 23:34:00,423 basehttp "POST /api/permission/ HTTP/1.1" 401 183
+WARNING 2025-01-04 23:34:50,070 log Unauthorized: /api/profile/
+WARNING 2025-01-04 23:34:50,071 basehttp "GET /api/profile/ HTTP/1.1" 401 183
+WARNING 2025-01-04 23:34:51,356 log Unauthorized: /api/profile/
+WARNING 2025-01-04 23:34:51,357 basehttp "GET /api/profile/ HTTP/1.1" 401 183
