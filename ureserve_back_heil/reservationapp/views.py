@@ -129,7 +129,7 @@ class MakeReservation(APIView):
         validation_link = f"{settings.FRONTEND_URL}/api/validate-reservation/{token}"
         send_mail(
             subject="Validate Reservation",
-            message=f"Click the following link to validate the reservation: {validation_link}",
+            message=f"Click the following link {validation_link} to validate the reservation made for the course {reservation.course_name} on the {reservation.date} from {reservation.start_time} to {reservation.end_time} by {reservation.delegate}",
             from_email=settings.DEFAULT_FROM_EMAIL,
             recipient_list=[reservation.professor_email]
         )
